@@ -24,19 +24,19 @@ $( document ).ready(function(){
       var address = $('#textarea1').val();
       var city = $("#city option:selected").text();
       var state = $("#state option:selected").text();
-      var phoneNumber = $('#mob-no').val();
+      var phoneNumber = '+91' + $('#mob-no').val();
 
       e.preventDefault();
       $("#next-content").show();
       $("#before-next").hide();
-      console.log(firstname,lastname,email,address,city,state,'+91'+phoneNumber);
+      console.log(firstname,lastname,email,address,city,state,phoneNumber);
       
       users_db.add({
         name : firstname+' ' + lastname,
         address :  address+', '+city+', ' + state,
         email : email,
         admin: false,
-        phone_no : '91'+phoneNumber
+        phone_no : phoneNumber
       })
       .then((resp) => alert('Info added to db ', resp))
       .catch(error => console.error(error))
@@ -82,13 +82,14 @@ function signInWithPhone(sentCodeId,phoneNumber) {
 
               snapshot.forEach((user_doc) => {
                 if(user_doc.phone_no === phoneNumber) {
-                  alert('Successfully logged in')
+                  alert('Successfully logged in '+user_doc.name);
                   window.location.assign('./');
                 }
                 else{
-                  alert('You are logging in for first time please enter details.')
+                  alert('You are logging in for first time please enter details.');
                   // Make changes here
-                  document.getElementsByClassName("signup-content").style.display = "block";
+                  document.getElementById("signup-content").style.display = "block";
+                  document.getElementById("signin-content").style.display = "none";
                 }
               })
             })
@@ -97,7 +98,7 @@ function signInWithPhone(sentCodeId,phoneNumber) {
     })
     .catch(error => {
         console.error(error);
-        alert('Sigin in error, incorrect Otp please try again')
+        alert(error.message);
     })
   }
 

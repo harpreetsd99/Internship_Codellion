@@ -37,8 +37,8 @@
 
 				        		$("#signin-main").click(function(e){
 									e.preventDefault();
-									$(".signin-content").show();
-									$(".signup-content").hide();
+									$("#signin-content").show();
+									$("#signup-content").hide();
 									$("#signin-main").css("border-bottom","2px solid #ff8c00");
 				        		});
 
@@ -83,8 +83,8 @@
 
 			        		$("#signin-main-small").click(function(e){
 								e.preventDefault();
-								$(".signin-content").show();
-								$(".signup-content").hide();
+								$("#signin-content").show();
+								$("#signup-content").hide();
 								$("#signin-main-small").css("border-bottom","2px solid #ff8c00");
 			        		});
 
@@ -102,7 +102,7 @@
 <!-----------------------------Sign-In Content---------------------------------->	
 				<div class="content-login center">
 					<div class="col s12 m9 center">
-						<div class="signin-content orange-text" style="padding:0px 30px;display:block;margin-top:20px;">
+						<div id="signin-content" class="orange-text" style="padding:0px 30px;display:block;margin-top:20px;">
 							<h4 style="color:#1c2224;">Sign In<hr width="50px"></h4><br><br>
 							<div class="row center">
 			    				<form class="col s12 m12">
@@ -129,7 +129,7 @@
 			        		</div>
 			        	</div>
 <!-----------------------------Sign-Up Content---------------------------------->	
-			        	<div class="signup-content orange-text" id="signup-page" style="display:none;padding:0px 30px;margin-top:20px;">
+			        	<div id="signup-content" class="orange-text" id="signup-page" style="display:none;padding:0px 30px;margin-top:20px;">
 							<h4 style="color:#1c2224;">Sign Up</h4><hr width="50px"><br>
 							<div class="row center" id="signup-row">
 			    				<form class="col s12 m12">
