@@ -43,7 +43,7 @@ main{
 	height: 530px;
 }
 .product-details{
-	padding-left: 20px;
+	padding-left: 15px;
 }
 .title-main{
 	color: #ff8c00;
@@ -77,6 +77,36 @@ hr{
 }
 .checkpoint{
 	font-family: 'Roboto', sans-serif;
+}
+#progress-bar{
+margin-left:16px;
+margin-right: 1px;
+}
+.bullet {
+		border: 2px solid #ff8c00;
+		height: 32px;
+		width: 30px;
+		border-radius: 100%;
+		color: #ff8c00;
+		display: inline-block;
+		position: relative;
+		line-height:20px;
+		text-align:  center;
+		padding-top: 3px;
+		justify-content: space-between;
+		left: 50%;
+	}
+#qty-checkpoint{
+	margin-left:0px;
+	margin-bottom: 5px;
+}
+#price-checkpoint{
+	margin-left:0px;
+	margin-bottom: 5px;
+}
+#label-price, #label-qty{
+	position: relative;
+	left: 48%;
 }
 .suggestions{
 	display: block;
@@ -137,6 +167,10 @@ main{
 	margin:0px;
 	padding:0px;
 }
+.product-details{
+	padding-left: 5px;
+	padding-right: 5px;
+}
 #product-img-cont{
 	padding:0px;
 }
@@ -152,8 +186,16 @@ main{
 .selling-price{
 	font-size: 20px;
 }
-#checkpoint-content{
-	font-size: 12px;
+#qty-checkpoint{
+	margin-left:8px;
+	margin-bottom: 5px;
+}
+#price-checkpoint{
+	margin-left:8px;
+	margin-bottom: 5px;
+}
+#checkpoint-num{
+	margin-left:10px;
 }
 .card{
 	margin:1px;

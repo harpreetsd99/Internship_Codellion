@@ -96,19 +96,56 @@
 						</div>
 					</div>
 					<div class="row">
-						<p><span>No. Of Units Sold:&emsp;550 Units</span></p>
+						<p class="left"><span>No. Of Units Sold:&emsp;550 Units</span></p>
+						<p class="right hide-on-med-and-down"><span>No. Of Checkpoints:&emsp;<span id="numcheckpoint">1</span></span></p>
 					</div>
-					<div class="row">
-						<div class="progress-checkpoint">
-	                		<span style="font-size:13px;color: #26a69a;" id="checkpoint-content" class="col s9">Check-Point Progress</span>
-	                		<span style="font-size:13px;color: #26a69a;" id="checkpoint-content" class="col s3 right">30 Left</span>
-	            		</div><br>
-						<div class="progress">
-	      					<div class="determinate" style="background-color: #ff8c00; width: 70%;"></div>
+					<div id="checkpoint-details" class="row">
+						<div id="checkpoint" class="center">
+							<span style="font-size:18px;color: #26a69a;" id="checkpoint-content" style="display: none;">Check Points</span><br><br>
+							<div id="checkpoint-num" style="display: none;">
+								<div class="bullet left"><span id="num">n</span><i class="material-icons">arrow_drop_down</i></div>
+							</div>
+						</div><br><br>
+						<div id="progress-bar" class="progress">
+	      					<div class="determinate" style="background-color: #ff8c00; width: 50%;"></div>
 	  					</div>
-	  					<sub class="left"><label>0</label></sub>
-						<sub class="right"><label>100</label></sub><br>
+	  					<div id="qty-checkpoint" class="row">
+	  						<sub class="left">
+	  							<label>QTY</label>
+	  						</sub>
+	  						<sup id="label-qty">
+	  							<label>500</label>
+	  						</sup>
+	  					</div>
+	  					<div class="row" id="price-checkpoint">
+							<sub class="left">
+								<label>(&nbsp;&#8377;&nbsp;)</label>
+							</sub>
+							<sup  id="label-price">
+								<label>25&#8377;</label>
+							</sup>
+						</div>
 					</div>
+					<script type="text/javascript">
+						$(document).ready(function(){
+							var num = parseInt($("#numcheckpoint").text());
+							if(num>0){
+								$("checkpoint-content").show();
+								for(i=1;i<=num;i++){
+									$("#num").text(i);
+									$("#checkpoint").append($("#checkpoint-num").html());
+								}
+									// $("#qty-checkpoint").append($("#label-qty").html());
+									// $("#price-checkpoint").append($("#label-price").html());
+								for(i=1;i<num;i++){
+									$("#label-qty").clone().insertAfter("#label-qty");
+									$("#label-price").clone().insertAfter("#label-price");
+								}
+							}else{
+								$("#checkpoint-details").hide();
+							}
+						});
+					</script>
 					<div class="row">
 						<div class="btns center">
 							<a id="btn-main" class="waves-effect waves-light btn orange darken-1"><i class="material-icons right">shopping_basket</i>Add To Cart</a>
@@ -420,6 +457,7 @@
 
 		    $('.sidenav').sidenav();
 		    $('.materialboxed').materialbox();
+
 
 		});
     </script>
