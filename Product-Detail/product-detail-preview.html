@@ -172,17 +172,46 @@
 								<span class="right"><button class="off-label-sugg">3% OFF</button></span>
 							</div>
 							<div class="qty-sugg">5pc</div>
+		<!-- ----------changes--------------- -->
 							<div class="sell-price-sugg">
 								<strong>&#8377;50</strong>
-								<span class="right"><a id="btn-sugg" class="waves-effect waves-light btn-small"><i class="material-icons right">shopping_basket</i>Add</a></span>
+								<span class="actual-price">&emsp;<s>&#8377;65</s></span>
+							</div><br>
+							<div class="row center">
+								<span>
+									<button id="count-sug-dsc" class="count-sug-dsc waves-effect waves-light btn-small">
+										-
+									</button>
+									&emsp;<span class="count-sug">1</span>&emsp;
+									<button id="count-sug-inc" class="count-sug-inc waves-effect waves-light btn-small">
+										+
+									</button>
+								</span>
 							</div>
-							<div>
-								<span class="actual-price"><s>&#8377;65</s></span>
+							<div class="center">
+								<a id="btn-sugg" class="waves-effect waves-light btn"><i class="material-icons right">shopping_basket</i>Add</a>
 							</div>
+							<script type="text/javascript">
+								$(document).ready(function(){
+									$(".count-sug-inc").on("click",function(e){
+										var el = $(e.currentTarget);
+										var count = parseInt(el.closest("span").find(".count-sug").text());
+										count++;
+										el.closest("span").find(".count-sug").text(count);
+									});
+									$(".count-sug-dsc").on("click",function(){
+										var count = parseInt($(this).closest("span").find(".count-sug").text());
+										count--;
+										if (count >= 0) {
+											$(this).closest("span").find(".count-sug").text(count);
+										}
+									});
+								});
+							</script>
+		<!-- ----------changes--------------- -->
 						</div>
 					</div>
 				</div>
-				
 				<div class="col s6 m2">
 					<div class="card hoverable">
 						<div class="product-image">
@@ -196,10 +225,21 @@
 							<div class="qty-sugg">1kg</div>
 							<div class="sell-price-sugg">
 								<strong>&#8377;30</strong>
-									<span class="right"><a id="btn-sugg" class="waves-effect waves-light btn-small"><i class="material-icons right">shopping_basket</i>Add</a></span>
+								<span class="actual-price">&emsp;<s>&#8377;35</s></span>
+							</div><br>
+							<div class="row center">
+								<span>
+									<button id="count-sug-dsc" class="count-sug-dsc waves-effect waves-light btn-small">
+										-
+									</button>
+									&emsp;<span class="count-sug">1</span>&emsp;
+									<button id="count-sug-inc" class="count-sug-inc waves-effect waves-light btn-small">
+										+
+									</button>
+								</span>
 							</div>
-							<div>
-								<span class="actual-price"><s>&#8377;35</s></span>
+							<div class="center">
+								<a id="btn-sugg" class="waves-effect waves-light btn"><i class="material-icons right">shopping_basket</i>Add</a>
 							</div>
 						</div>
 					</div>
@@ -216,11 +256,22 @@
 							</div>
 							<div class="qty-sugg">2kg</div>
 							<div class="sell-price-sugg">
-								<strong>&#8377;130</strong>
-								<span class="right"><a id="btn-sugg" class="waves-effect waves-light btn-small"><i class="material-icons right">shopping_basket</i>Add</a></span>
+								<strong>&#8377;50</strong>
+								<span class="actual-price">&emsp;<s>&#8377;65</s></span>
+							</div><br>
+							<div class="row center">
+								<span>
+									<button id="count-sug-dsc" class="count-sug-dsc waves-effect waves-light btn-small">
+										-
+									</button>
+									&emsp;<span class="count-sug">1</span>&emsp;
+									<button id="count-sug-inc" class="count-sug-inc waves-effect waves-light btn-small">
+										+
+									</button>
+								</span>
 							</div>
-							<div>
-								<span class="actual-price"><s>&#8377;155</s></span>
+							<div class="center">
+								<a id="btn-sugg" class="waves-effect waves-light btn"><i class="material-icons right">shopping_basket</i>Add</a>
 							</div>
 						</div>
 					</div>
@@ -237,11 +288,22 @@
 							</div>
 							<div class="qty-sugg">1kg</div>
 							<div class="sell-price-sugg">
-								<strong>&#8377;80</strong>
-								<span class="right"><a id="btn-sugg" class="waves-effect waves-light btn-small"><i class="material-icons right">shopping_basket</i>Add</a></span>
+								<strong>&#8377;50</strong>
+								<span class="actual-price">&emsp;<s>&#8377;65</s></span>
+							</div><br>
+							<div class="row center">
+								<span>
+									<button id="count-sug-dsc" class="count-sug-dsc waves-effect waves-light btn-small">
+										-
+									</button>
+									&emsp;<span class="count-sug">1</span>&emsp;
+									<button id="count-sug-inc" class="count-sug-inc waves-effect waves-light btn-small">
+										+
+									</button>
+								</span>
 							</div>
-							<div>
-								<span class="actual-price"><s>&#8377;95</s></span>
+							<div class="center">
+								<a id="btn-sugg" class="waves-effect waves-light btn"><i class="material-icons right">shopping_basket</i>Add</a>
 							</div>
 						</div>
 					</div>
@@ -258,11 +320,22 @@
 							</div>
 							<div class="qty-sugg">12pc</div>
 							<div class="sell-price-sugg">
-								<strong>&#8377;10</strong>
-								<span class="right"><a id="btn-sugg" class="waves-effect waves-light btn-small"><i class="material-icons right">shopping_basket</i>Add</a></span>
+								<strong>&#8377;50</strong>
+								<span class="actual-price">&emsp;<s>&#8377;65</s></span>
+							</div><br>
+							<div class="row center">
+								<span>
+									<button id="count-sug-dsc" class="count-sug-dsc waves-effect waves-light btn-small">
+										-
+									</button>
+									&emsp;<span class="count-sug">1</span>&emsp;
+									<button id="count-sug-inc" class="count-sug-inc waves-effect waves-light btn-small">
+										+
+									</button>
+								</span>
 							</div>
-							<div>
-								<span class="actual-price"><s>&#8377;35</s></span>
+							<div class="center">
+								<a id="btn-sugg" class="waves-effect waves-light btn"><i class="material-icons right">shopping_basket</i>Add</a>
 							</div>
 						</div>
 					</div>
@@ -279,11 +352,22 @@
 							</div>
 							<div class="qty-sugg">500g</div>
 							<div class="sell-price-sugg">
-								<strong>&#8377;20</strong>
-								<span class="right"><a id="btn-sugg" class="waves-effect waves-light btn-small"><i class="material-icons right">shopping_basket</i>Add</a></span>
+								<strong>&#8377;50</strong>
+								<span class="actual-price">&emsp;<s>&#8377;65</s></span>
+							</div><br>
+							<div class="row center">
+								<span>
+									<button id="count-sug-dsc" class="count-sug-dsc waves-effect waves-light btn-small">
+										-
+									</button>
+									&emsp;<span class="count-sug">1</span>&emsp;
+									<button id="count-sug-inc" class="count-sug-inc waves-effect waves-light btn-small">
+										+
+									</button>
+								</span>
 							</div>
-							<div>
-								<span class="actual-price"><s>&#8377;25</s></span>
+							<div class="center">
+								<a id="btn-sugg" class="waves-effect waves-light btn"><i class="material-icons right">shopping_basket</i>Add</a>
 							</div>
 						</div>
 					</div>
@@ -291,7 +375,8 @@
 			</div>
 		</div>
 	</div>
-	<!-----------------------------Tablet-Small Laptop-Mobile(S)------------------>
+	
+	<!----------------Tablet-Small Laptop-Mobile(S)------------------>
 	<div class="suggestions-odd">
 		<h6 style="color: #333;padding: 30px 10px;">More Like This</h6>
 		<div class="cards">
@@ -306,13 +391,23 @@
 								<span>Strawberry</span>
 								<span class="right"><button class="off-label-sugg">3% OFF</button></span>
 							</div>
-							<div class="qty-sugg">5pc</div>
 							<div class="sell-price-sugg">
 								<strong>&#8377;50</strong>
-								<span class="right"><a id="btn-sugg" class="waves-effect waves-light btn-small"><i class="material-icons right">shopping_basket</i>Add</a></span>
+								<span class="actual-price">&emsp;<s>&#8377;65</s></span>
+							</div><br>
+							<div class="row center">
+								<span>
+									<button id="count-sug-dsc" class="count-sug-dsc waves-effect waves-light btn-small">
+										-
+									</button>
+									&emsp;<span class="count-sug">1</span>&emsp;
+									<button id="count-sug-inc" class="count-sug-inc waves-effect waves-light btn-small">
+										+
+									</button>
+								</span>
 							</div>
-							<div>
-								<span class="actual-price"><s>&#8377;65</s></span>
+							<div class="center">
+								<a id="btn-sugg" class="waves-effect waves-light btn"><i class="material-icons right">shopping_basket</i>Add</a>
 							</div>
 						</div>
 					</div>
@@ -330,11 +425,22 @@
 							</div>
 							<div class="qty-sugg">1kg</div>
 							<div class="sell-price-sugg">
-								<strong>&#8377;30</strong>
-								<span class="right"><a id="btn-sugg" class="waves-effect waves-light btn-small"><i class="material-icons right">shopping_basket</i>Add</a></span>
+								<strong>&#8377;50</strong>
+								<span class="actual-price">&emsp;<s>&#8377;65</s></span>
+							</div><br>
+							<div class="row center">
+								<span>
+									<button id="count-sug-dsc" class="count-sug-dsc waves-effect waves-light btn-small">
+										-
+									</button>
+									&emsp;<span class="count-sug">1</span>&emsp;
+									<button id="count-sug-inc" class="count-sug-inc waves-effect waves-light btn-small">
+										+
+									</button>
+								</span>
 							</div>
-							<div>
-								<span class="actual-price"><s>&#8377;35</s></span>
+							<div class="center">
+								<a id="btn-sugg" class="waves-effect waves-light btn"><i class="material-icons right">shopping_basket</i>Add</a>
 							</div>
 						</div>
 					</div>
@@ -351,11 +457,22 @@
 							</div>
 							<div class="qty-sugg">2kg</div>
 							<div class="sell-price-sugg">
-								<strong>&#8377;130</strong>
-								<span class="right"><a id="btn-sugg" class="waves-effect waves-light btn-small"><i class="material-icons right">shopping_basket</i>Add</a></span>
+								<strong>&#8377;50</strong>
+								<span class="actual-price">&emsp;<s>&#8377;65</s></span>
+							</div><br>
+							<div class="row center">
+								<span>
+									<button id="count-sug-dsc" class="count-sug-dsc waves-effect waves-light btn-small">
+										-
+									</button>
+									&emsp;<span class="count-sug">1</span>&emsp;
+									<button id="count-sug-inc" class="count-sug-inc waves-effect waves-light btn-small">
+										+
+									</button>
+								</span>
 							</div>
-							<div>
-								<span class="actual-price"><s>&#8377;155</s></span>
+							<div class="center">
+								<a id="btn-sugg" class="waves-effect waves-light btn"><i class="material-icons right">shopping_basket</i>Add</a>
 							</div>
 						</div>
 					</div>
@@ -372,11 +489,22 @@
 							</div>
 							<div class="qty-sugg">1kg</div>
 							<div class="sell-price-sugg">
-								<strong>&#8377;80</strong>
-								<span class="right"><a id="btn-sugg" class="waves-effect waves-light btn-small"><i class="material-icons right">shopping_basket</i>Add</a></span>
+								<strong>&#8377;50</strong>
+								<span class="actual-price">&emsp;<s>&#8377;65</s></span>
+							</div><br>
+							<div class="row center">
+								<span>
+									<button id="count-sug-dsc" class="count-sug-dsc waves-effect waves-light btn-small">
+										-
+									</button>
+									&emsp;<span class="count-sug">1</span>&emsp;
+									<button id="count-sug-inc" class="count-sug-inc waves-effect waves-light btn-small">
+										+
+									</button>
+								</span>
 							</div>
-							<div>
-								<span class="actual-price"><s>&#8377;95</s></span>
+							<div class="center">
+								<a id="btn-sugg" class="waves-effect waves-light btn"><i class="material-icons right">shopping_basket</i>Add</a>
 							</div>
 						</div>
 					</div>
@@ -393,11 +521,22 @@
 							</div>
 							<div class="qty-sugg">12pc</div>
 							<div class="sell-price-sugg">
-								<strong>&#8377;10</strong>
-								<span class="right"><a id="btn-sugg" class="waves-effect waves-light btn-small"><i class="material-icons right">shopping_basket</i>Add</a></span>
+								<strong>&#8377;50</strong>
+								<span class="actual-price">&emsp;<s>&#8377;65</s></span>
+							</div><br>
+							<div class="row center">
+								<span>
+									<button id="count-sug-dsc" class="count-sug-dsc waves-effect waves-light btn-small">
+										-
+									</button>
+									&emsp;<span class="count-sug">1</span>&emsp;
+									<button id="count-sug-inc" class="count-sug-inc waves-effect waves-light btn-small">
+										+
+									</button>
+								</span>
 							</div>
-							<div>
-								<span class="actual-price"><s>&#8377;35</s></span>
+							<div class="center">
+								<a id="btn-sugg" class="waves-effect waves-light btn"><i class="material-icons right">shopping_basket</i>Add</a>
 							</div>
 						</div>
 					</div>
@@ -414,11 +553,22 @@
 							</div>
 							<div class="qty-sugg">500g</div>
 							<div class="sell-price-sugg">
-								<strong>&#8377;20</strong>
-								<span class="right"><a id="btn-sugg" class="waves-effect waves-light btn-small"><i class="material-icons right">shopping_basket</i>Add</a></span>
+								<strong>&#8377;50</strong>
+								<span class="actual-price">&emsp;<s>&#8377;65</s></span>
+							</div><br>
+							<div class="row center">
+								<span>
+									<button id="count-sug-dsc" class="count-sug-dsc waves-effect waves-light btn-small">
+										-
+									</button>
+									&emsp;<span class="count-sug">1</span>&emsp;
+									<button id="count-sug-inc" class="count-sug-inc waves-effect waves-light btn-small">
+										+
+									</button>
+								</span>
 							</div>
-							<div>
-								<span class="actual-price"><s>&#8377;25</s></span>
+							<div class="center">
+								<a id="btn-sugg" class="waves-effect waves-light btn"><i class="material-icons right">shopping_basket</i>Add</a>
 							</div>
 						</div>
 					</div>
@@ -426,6 +576,7 @@
 			</div>
 		</div>
 	</div>
+	
 	<!--------------------------------End-------------------------------------->
 	<footer class="page-footer center" style="background-color: #1c2224;font-family: 'Roboto', sans-serif;">
         <div class="container">

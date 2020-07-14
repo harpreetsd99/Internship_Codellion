@@ -150,6 +150,9 @@ margin-right: 1px;
 	font-size: 14px;
 	margin:3px 0px;
 }
+.count-sug-dsc, .count-sug-inc{
+	background-color: #51aa1b !important;
+}
 #btn-sugg{
 	 border:1px solid #51aa1b;
 	 border-radius:20px;
